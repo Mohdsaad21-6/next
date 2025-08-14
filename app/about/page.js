@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const page = () => {
+const about = () => {
   return (
     <div>
-<h1>This is a about page</h1>
+      <h1>This is a about page</h1>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default about;
+
+export const metadata = {
+  title: "Create Next App",
+  description: "This is a Facebook clone ",
+};
