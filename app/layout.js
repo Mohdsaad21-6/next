@@ -1,7 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
-import Footer from "@/component/Footer";
+import SessionWrapper from "./component/SessionWrapper";
+
+// import Navbar from "@/component/Navbar";
+// import Footer from "@/component/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,7 +26,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <Navbar/> */}
-        <div className="container mx-auto min-h-[85vh]" >{children}</div>
+
+        
+
+            <SessionWrapper>{children}</SessionWrapper>
         {/* <Footer></Footer> */}
       </body>
     </html>
